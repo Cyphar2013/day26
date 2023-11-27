@@ -1,0 +1,367 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+section {
+    max-width: 320px;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    position: absolute;
+    width: 320px;
+    padding: 10px;
+    margin: 0 auto;
+    top: 0%;
+    left: 0;
+    display: none;
+    right: 0;
+    flex-direction: column;
+    text-align: left;
+    background-color: white;
+}
+.navbar li, a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+}
+.navbar li, a:hover {
+    color: crimson;
+}
+
+nav .burger img {
+    width: 35px;
+    padding: 5px;
+    border: 2px solid lightgray;
+}
+.close img {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    position: absolute;
+    left: 90%;
+}
+
+.middle img {
+    max-width: 100%;
+    /* width: 300px;
+    height: 200px;
+    object-fit:cover; */
+}
+
+.heading h1 {
+    font-weight: 800;
+    line-height: 35px;
+}
+button {
+    background-color: rgba(0, 0, 0, 0.900);
+    color: white;
+    padding: 7px 20px;
+    margin-top: 10px;
+    border: none;
+} 
+
+button:hover {
+    background-color: crimson;   
+}
+
+.new {
+    width: 300px;
+    color: white;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+    padding: 20px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.900);
+}
+
+.newest:hover {
+    color: goldenrod;
+}
+
+.head {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.new .head:hover {
+    color: goldenrod;
+}
+
+.write-up { 
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.middle {
+    margin-bottom: 15px;
+}
+.article {
+    margin: 15px 0;
+}
+
+.img1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.img1 h1 {
+    color: lightslategray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img1 h5{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img1 h5:hover {
+    color: crimson;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.img2 h1 {
+    color: lightslategray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img2 h5{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img2 h5:hover {
+    color: crimson;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img3 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.img3 h1 {
+    color: lightslategray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img3 h5{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img3 h5:hover {
+    color: crimson;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 560px) {
+    section {
+        max-width: 900px;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: medium;
+        align-items: center;
+        background-color: white;
+    }
+    nav ul li a {
+        padding: 10px;
+        color: lightgrey;
+    }
+    nav ul li a:hover {
+        color: crimson;
+    }
+    nav .burger {
+        display: none;
+    }    
+    .middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 550px;
+        height: 450px;
+        gap: 10px;
+    }
+
+    .middle {
+        margin-bottom: 0;
+    }
+
+    .middle img {
+        max-width: 100%;
+        /* width: 550px;
+        height: 250px;
+        object-fit: contain;
+        margin-top: 15px;
+        margin-bottom: 15px; */
+    }
+    .read-more {
+        max-width: 300px;
+    }
+    .heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        gap: 7px;
+    }
+    .heading h1 {
+        font-weight: 800;
+        font-size: xx-large;
+        line-height: 35px;
+    }
+    button {
+        background-color: rgba(0, 0, 0, 0.900);
+        color: white;
+        padding: 7px 20px;
+        margin-top: 10px;
+        border: none;
+    }
+    button:hover {
+        background-color: crimson;
+    }
+    .new {
+        width: 275px;
+        color: white;
+        padding: 20px;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.900);
+    }
+    .newest:hover {
+        color: goldenrod;
+    }
+    .head {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .new .head:hover {
+        color: goldenrod;
+    }
+    .write-up { 
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    .article {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+    }
+    .img1 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+    .img1 h1 {
+        color: lightslategray;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .img1 h5{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .img1 h5:hover {
+        color: crimson;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .img2 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+    .img2 h1 {
+        color: lightslategray;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .img2 h5{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .img2 h5:hover {
+        color: crimson;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .img3 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+    .img3 h1 {
+        color: lightslategray;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .img3 h5{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .img3 h5:hover {
+        color: crimson;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .images {
+        display: flex;
+        flex-direction: row;
+    }
+    .close img {
+        display: none;
+    }
+}
